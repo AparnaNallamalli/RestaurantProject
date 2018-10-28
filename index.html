@@ -14,17 +14,18 @@
       <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
       <link rel="stylesheet" href="styles/style.css">
       <title>Ristorante Con Fusion</title>
+      
 </head>
 
 <body>
 
-        <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+        <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
                 <div class="container">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                    <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
-                   <div class="collapse navbar-collapse" id="Navbar"></div>
+                   <div class="collapse navbar-collapse" id="Navbar">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
@@ -35,10 +36,6 @@
                 </div>
             </nav>
     
-
-
-
-
     <header class="jumbotron" >
         <div class="container" >
             <div class="row row-header" >
@@ -46,12 +43,13 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-centre">
+                <div class="col-12 col-sm-3">
                     <img src="img/logo.png" class="img-fluid">
                     
                 </div>
-                <div class="col-12 col-sm align-self-centre">
-                <button type="button" class="btn btn-warning btn-lg btn-block">Reserve Table</button>
+                <div class="col-12 col-sm-3 align-self-centre">
+                        <a href="#testform" class="btn btn-block btn-warning">Reserve Table</a >                
+                
             </div>
         </div>
     </header>
@@ -109,14 +107,15 @@
         </div>
     </div>
     <div>
-    <div class="offset-4 col-sm-4 offset-4">
-            <div class="card">
+    <div class="col-sm-12,col-md-2">
+            <div class="card offset-3  col-sm-6" id="card1" name="card1">
                 <h3 class="card-header bg-warning text-white">RESERVE TABLE</h3>
                 <div class="card-body">
                     <dl class="row">
-                            <dt class="col-2">Number Of Guests</dt>
+                            <dt class="col-sm-6" >Number Of Guests</dt>
 <dd>
-                            <div class="col-12">
+                            <div class="col-sm-6,col-md-4">
+                            <form id="testform">
                                     <div class="form-check-inline">
                                     <label class="form-check-label" for="radio1">
                                       <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked> 1
@@ -150,8 +149,8 @@
                                             </dd>
                                             </dl>
                                             <dl class="row">
-                                            <dt class="col-2">Date and Time</dt>
-                                            <dd class="col-10">
+                                            <dt class="col-sm-6">Date and Time</dt>
+                                            <dd class="col-sm-6">
                                                     <div class="form-group row">
                                                            
                                                             <div class="col col-md-4">
@@ -165,7 +164,7 @@
                                   <button type="submit" class="btn btn-primary offset-1">Reserve</button>
                                 </form>
                               </div>
-                              
+            </div>
                                 
                              
                        
@@ -217,9 +216,11 @@
            </div>
         </div>
     </footer>
+    
 </body>
    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  
 </html>
